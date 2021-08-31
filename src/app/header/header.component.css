@@ -1,0 +1,26 @@
+.header{
+    background: whitesmoke;
+    height: 50px;
+    padding: 5px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.navbar{
+    justify-content: space-between;
+    background: navy;
+}
+
+a{
+    padding-right: 1rem;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+

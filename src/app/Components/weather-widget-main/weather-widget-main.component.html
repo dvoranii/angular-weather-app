@@ -1,0 +1,38 @@
+<div class="whole_widget">
+    <label class="enter_city">Enter city name</label>
+    <mat-form-field class="input" >
+
+        <input class="input_field" matInput #box />
+    </mat-form-field>
+
+    <div id="divWeatherMain">
+
+        <div *ngIf="WeatherData.isDay" class="weatherWidgetRow">
+            <i class="fas fa-6x fa-sun sun"></i>
+        </div>
+
+        <div *ngIf="!WeatherData.isDay" class="weatherWidgetRow">
+            <i class="fas fa-5x fa-moon moon"></i>
+        </div>
+
+        <div class="weatherWidgetRow cloudDiv">
+
+            <i class="fas fa-cloud fa-5x cloud"></i>
+        </div>
+
+        <div class="weather_info">
+            <div class="weatherWidgetRow" style="font-size: 32px;margin-top: 5px;">{{WeatherData.temp_celsius}}°</div>
+            <div class="weatherWidgetRow" style="font-size: 12px;">{{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°
+            </div>
+            <div class="weatherWidgetRow" style="font-size: 12px;">Feels Like: {{WeatherData.temp_feels_like}}°</div>
+            <div class="weatherWidgetRow" style="font-size: 25px; margin-top: 10px;">{{WeatherData.name}}</div>
+            <div class="weatherWidgetRow" style="font-size: 12px;">Humidity: {{WeatherData.main.humidity}}%</div>
+
+        </div>
+
+
+    </div>
+    <br>
+    <button class="search_button" mat-raised-button (click)="getWeatherData(box.value)">Search</button>
+
+</div>

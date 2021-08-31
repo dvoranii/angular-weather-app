@@ -1,0 +1,94 @@
+.whole_widget{
+    padding-top: 25px;
+    background-color:whitesmoke;
+}
+
+#divWeatherMain{
+    display: block;
+    border-radius: 10px;
+    width: 600px;
+    height: 600px;
+    background:linear-gradient(to bottom, black, navy);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 650px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+
+}
+
+.weather_info{
+    margin-top: 50px;
+}
+.weatherWidgetRow{
+    display: block;
+    margin:0 auto;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.sun{
+    margin-top: 50px;
+    color: yellow;
+    filter:drop-shadow(1px 1px 10px yellow);
+    
+}
+
+.moon{
+    margin-top: 50px;
+    color: white;
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+.cloudDiv{
+    margin-top: -40px;
+}
+
+.cloud{
+    color: rgb(243,242,231);
+    filter: drop-shadow(1px 1px 5px rgb(104,175,197));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cloudMovement{
+    from{margin-left: -55px;}
+    to{margin-left:65px;}
+}
+
+.enter_city{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size:15pt;
+    margin-left: 870px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px navy, 0 0 5px darkblue;
+
+}
+
+ .input{
+    margin-left: 820px;
+    color: black;  
+    width: 250px;
+    height: -10px;
+
+ }
+
+ .input_field{
+     height: 20px;
+ }
+ .search_button{
+    margin-left: 900px;
+    background: whitesmoke;
+    height: 40px;
+    width: 100px;
+    
+ }
+
+p{
+    margin-left: 20px;
+}
